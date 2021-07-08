@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="logo_petstar_background">#FFFFFF</color>
+    <color name="logo_petstar_background_actionBar">#23b14d</color>
+</resources>

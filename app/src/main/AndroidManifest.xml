@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.leobilha.covinfo">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS" tools:node="remove" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" tools:node="remove" />
+
+
+    <application
+        android:allowBackup="true"
+        android:appCategory="productivity"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+        <activity android:name="com.leobilha.covinfo.home.Splash"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.leobilha.covinfo.home.HomeDetalhes"
+            android:parentActivityName="com.leobilha.covinfo.home.Home"
+            android:theme="@style/AppTheme1" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.leobilha.covinfo.HospitaisProximos"
+            android:label="@string/title_activity_hospitais_proximos"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.leobilha.covinfo.linhadotempo.LinhaDoTempo"
+            android:parentActivityName="com.leobilha.covinfo.home.Home"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.home.Sobre"
+            android:parentActivityName="com.leobilha.covinfo.dicas.OQuePrecisoSaber"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.dicas.CardAppCoronaSus"
+            android:parentActivityName="com.leobilha.covinfo.dicas.OQuePrecisoSaber"
+            android:theme="@style/AppTheme1" />
+        <activity android:name="com.leobilha.covinfo.dicas.CardPainel" />
+        <activity android:name="com.leobilha.covinfo.dicas.CardFakeNews" />
+        <activity android:name="com.leobilha.covinfo.dicas.CardPainelLeitos" />
+        <activity
+            android:name="com.leobilha.covinfo.dicas.CardDoente"
+            android:parentActivityName="com.leobilha.covinfo.dicas.OQuePrecisoSaber"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.dicas.CardProteger"
+            android:parentActivityName="com.leobilha.covinfo.dicas.OQuePrecisoSaber"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.dicas.CardDiagnostico"
+            android:parentActivityName="com.leobilha.covinfo.dicas.OQuePrecisoSaber"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.dicas.CardTransmissao"
+            android:parentActivityName="com.leobilha.covinfo.dicas.OQuePrecisoSaber"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.dicas.CardSintomas"
+            android:parentActivityName="com.leobilha.covinfo.dicas.OQuePrecisoSaber"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.dicas.CardCovid19"
+            android:parentActivityName="com.leobilha.covinfo.dicas.OQuePrecisoSaber"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.dicas.OQuePrecisoSaber"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.leobilha.covinfo.home.Home"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.noticias.NoticiasDetalhesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.leobilha.covinfo.noticias.Noticias"
+            android:parentActivityName="com.leobilha.covinfo.home.Home"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.leobilha.covinfo.home.Home"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+
+    </application>
+
+</manifest>

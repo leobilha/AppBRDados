@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<color name="colorPrimary">#FA5858</color>
+<color name="colorPrimaryDark">#000000</color>
+<color name="colorAccent">#FA5858</color>
+<color name="colorWhite">#fff</color>
+
+
+<color name="corTotalConfirmados">#E6DE00</color>
+<color name="corTotalMortes">#e60000</color>
+<color name="corTotalRecuperados">#7bb074</color>
+<color name="corAtivos">#6C6C6C</color>
+<color name="corTestes">#427CF6</color>
+<color name="corCriticos">#000000</color>
+<color name="corCasoPessoa">#37FA92</color>
+<color name="corPopulacao">#6EFA37</color>
+
+<color name="cardDicas">#D57777</color>
+
+</resources>

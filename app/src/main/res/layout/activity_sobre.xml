@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_2"
+    tools:context="com.leobilha.covinfo.home.Sobre">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Titulo -->
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center_horizontal"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="6"
+                    android:text="Sobre este App"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--Texto 1-->
+        <LinearLayout
+            android:id="@+id/texto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="403dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="6"
+                    android:text="O CovInfo é um aplicativo para celulares Android gratuito, sem fins lucrativos, e totalmente voluntário.\nSurgiu para reunir o máximo de informações relacionadas ao COVID-19, então aqui você encontra informações que foram divulgadas no site do Ministério da Saúde e dados atualizados sobre os números no Brasil.
+\n\n• Informações dos números COVID-19: Obtidas pela Novel COVID API, onde os dados são obtidos dos relatórios da Universidade Johns Hopkins, do New York Times, do Worldometers e da Apple para fornecer uma visão abrangente dos dados. Dados são atualizados a cada 10 minutos, possuindo uma pontuação de desempenho de percepção de 100/100 páginas;
+
+\n• Informação obtidas no site do Ministério da Saúde: Disque Saúde 136, Estudantes da Saúde Cadastre-se!, O que preciso saber?, Linha do Tempo COVID-19;
+
+\n• Sobre as notícias: São obtidas via API Google News.
+
+\n\nIcon made by Freepik from www.flaticon.com
+\nIcon made by Surang from www.flaticon.com
+\nIcon made by Mavadee from www.flaticon.com
+\nIcon made by Kiranshastry from www.flaticon.com
+\nIcon made by Geotatah from www.flaticon.com
+\nIcon made by Smalllikeart from www.flaticon.com
+\nIcon made by Pixel Perfect from www.flaticon.com
+
+\n\nEstamos abertos para divulgar qualquer instituição filantrópica, basta entrar em contato pelo e-mail do desenvolvedor que recebemos também sugestões, críticas, elogios etc."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--Texto 2-->
+        <LinearLayout
+            android:id="@+id/texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="403dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textoHomenagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="6"
+                    android:text="O CovInfo faz uma homenagem a todas as vitimas do COVID-19 e desejamos que esse período que estamos enfrentando passe o mais rápido possível."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--Imagem -->
+        <LinearLayout
+            android:id="@+id/rosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="603dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/rosa"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--Texto 3 -->
+        <LinearLayout
+            android:id="@+id/texto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="603dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rosa">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="6"
+                    android:text="Jesus disse: Levantai-vos, e não tenhais medo. Mateus 17:7"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/texto3">
+
+            <RelativeLayout
+                android:id="@+id/feito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/textoFeito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="6"
+                    android:text="Feito com"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17dp" />
+
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/energy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/energy"
+                android:layout_toRightOf="@+id/feito"/>
+
+            <RelativeLayout
+                android:id="@+id/leo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/energy">
+
+                <TextView
+                    android:id="@+id/leoBilha"
+                    android:linksClickable="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="6"
+                    android:text="por Leonardo Terragno"
+                    android:textSize="17dp" />
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

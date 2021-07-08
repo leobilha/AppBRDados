@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:com.leobilha.covinfo="http://schemas.android.com/tools"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <item
+        android:id="@+id/action_sobre"
+        android:orderInCategory="100"
+        android:title="Sobre este App"
+        android:icon="@drawable/ic_action_name"/>
+
+
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leobilha.covinfo.home.Splash">
+
+    <ImageView
+        android:id="@+id/splashImg"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/textCovInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/splashImg"/>
+
+    <TextView
+        android:id="@+id/textCarrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Carregando..."
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textCovInfo"/>
+
+    <ProgressBar
+        android:id="@+id/progress_circular_splash"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:indeterminate="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textCarrega"
+        android:indeterminateDrawable="@drawable/progress" />
+
+
+</RelativeLayout>
